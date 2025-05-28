@@ -1,10 +1,19 @@
 ## Localizing and Mitigating Errors in Long-form Question Answering
 
-This repository contains the code for our arXiv 2024 paper "Localizing and Mitigating Errors in Long-form Question Answering".
+[![Arxiv](https://img.shields.io/badge/Arxiv-2407.11930-red?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2407.11930)
+[![License](https://img.shields.io/github/license/UKPLab/acl2025-lfqa-hallucination)](https://opensource.org/licenses/Apache-2.0)
+[![Python Versions](https://img.shields.io/badge/Python-3.10-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+
+
+<p align="center">
+  <img src="./images/data_collection.png" width="400" />
+</p>
+
+This repository contains the code for our ACL 2025 paper "Localizing and Mitigating Errors in Long-form Question Answering".
 We provide the code for the following tasks:
 
 * Creating an expert-annotated hallucination dataset for long-form question answering
-* Methodologies to detect and mitigate errors in long-form question answers
+* Methodologies to detect and mitigate completeness errors in long-form question answers
 
 ![Static Badge](https://img.shields.io/badge/ABSTRACT-1a76ff)
 
@@ -225,10 +234,10 @@ done
 If you use this code or the dataset, please cite the following paper:
 
 ```
-@misc{sachdeva2024finegrainedhallucinationdetectionmitigation,
-      title={Fine-grained Hallucination Detection and Mitigation in Long-form Question Answering}, 
+@misc{sachdeva2025localizingmitigatingerrorslongform,
+      title={Localizing and Mitigating Errors in Long-form Question Answering}, 
       author={Rachneet Sachdeva and Yixiao Song and Mohit Iyyer and Iryna Gurevych},
-      year={2024},
+      year={2025},
       eprint={2407.11930},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
