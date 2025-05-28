@@ -27,6 +27,15 @@ Finally, we propose a prompt-based approach, Error-informed refinement, that use
 
 ---
 
+Contact person: [Rachneet Sachdeva](mailto:rachneet.sachdeva@tu-darmstadt.de) 
+
+[UKP Lab](https://www.ukp.tu-darmstadt.de/) | [TU Darmstadt](https://www.tu-darmstadt.de/
+)
+
+Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
+
+---
+
 ### ![Static Badge](https://img.shields.io/badge/DATASET-ff7f0e)
 
 The dataset is available in the `src/data` folder. The dataset is available in 3 formats:
@@ -218,19 +227,8 @@ do
 done
 ```
 
-### Contact
 
-- [Rachneet Sachdeva](https://github.com/Rachneet)
-- [UKP lab](https://www.ukp.tu-darmstadt.de/)
-- [TU Darmstadt](https://www.tu-darmstadt.de/)
-
-### Disclaimer
-
-> **NOTE**
-> This repository contains experimental software and is published for the sole purpose of giving additional background
-> details on the respective publication.
-
-### Citation
+### Cite
 If you use this code or the dataset, please cite the following paper:
 
 ```
@@ -244,3 +242,9 @@ If you use this code or the dataset, please cite the following paper:
       url={https://arxiv.org/abs/2407.11930}, 
 }
 ```
+
+### Disclaimer
+
+> **NOTE**
+> This repository contains experimental software and is published for the sole purpose of giving additional background
+> details on the respective publication.
