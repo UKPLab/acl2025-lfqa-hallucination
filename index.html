@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Localizing and Mitigating Errors in Long-form Question Answering</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Localizing and Mitigating Errors in Long-form Question Answering</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://rachneet.github.io/" target="_blank">Rachneet Sachdeva<sup>1</sup></a>,</span>
+                <span class="author-block">
+                  <a href="https://yixiao-song.github.io/" target="_blank">Yixiao Song<sup>2</sup></a>,</span>
+                    <span class="author-block">
+                        <a href="https://www.cs.umd.edu/~miyyer/" target="_blank">Mohit Iyyer<sup>2</sup></a></span>,
+                  <span class="author-block">
+                    <a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp" target="_blank">Iryna Gurevych<sup>1</sup></a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <sup>1</sup>UKP Lab, TU Darmstadt &emsp;
+                      <sup>2</sup>University of Massachusetts Amherst
+                  </div>
+
+                <div class="is-size-5 publication-authors">
+                   <span class="conference-venue">
+                    <a href="https://2025.aclweb.org/" target="_blank">ACL 2025</a>
+                   </span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2407.11930" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+<!--                    <span class="link-block">-->
+<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+<!--                      class="external-link button is-normal is-rounded is-dark">-->
+<!--                      <span class="icon">-->
+<!--                        <i class="fas fa-file-pdf"></i>-->
+<!--                      </span>-->
+<!--                      <span>Supplementary</span>-->
+<!--                    </a>-->
+<!--                  </span>-->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/UKPLab/acl2025-lfqa-hallucination" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+
+
+              <!-- Hugging Face Dataset link -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/UKPLab/HaluQuestQA" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="🤗" style="height: 1.2em;">
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+
+              <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2407.11930" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Annotating Fine-grained Errors in Long-form Answers</h2>
+      <h2 class="subtitle has-text-justified">
+        Prior LFQA evaluations with non-expert (<a href="https://arxiv.org/pdf/2112.09332" target="_blank">Nakano et al., 2021</a>) and expert (<a href="https://aclanthology.org/2023.acl-long.181/" target="_blank">Xu et al., 2023a</a>) annotators collect preference judgments over model responses.
+        However, overall preference is not indicative of fine-grained errors in LFQA.
+        Our work addresses this gap by introducing <b>HaluQuestQA</b>, a dataset of long-form answers annotated at the span level with five error types: question misconception, factuality, completeness, relevance, and references.
+        Expert annotators provide these annotations along with overall preference judgments.
+      </h2>
+      <p align="center">
+        <img src="static/images/HaluquestQA_data_collection.png" alt="HaluQuestQA Data Collection" width="500">
+      </p>
+      <h2 class="subtitle has-text-centered">
+        Overview of our data collection process. Using five fine-grained evaluation criteria, we collect span-level expert human judgments on question-answer pairs from the Reddit platform, as well as on corresponding answers generated by GPT-4.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Long-form question answering (LFQA) aims to provide thorough and in-depth answers to complex questions, enhancing comprehension. However, such detailed responses are prone to hallucinations and factual inconsistencies, challenging their faithful evaluation. This work introduces HaluQuestQA, the first hallucination dataset with localized error annotations for human-written and model-generated LFQA answers. HaluQuestQA comprises 698 QA pairs with 1.8k span-level error annotations for five different error types by expert annotators, along with preference judgments. Using our collected data, we thoroughly analyze the shortcomings of long-form answers and find that they lack comprehensiveness and provide unhelpful references. We train an automatic feedback model on this dataset that predicts error spans with incomplete information and provides associated explanations. Finally, we propose a prompt-based approach, Error-informed refinement, that uses signals from the learned feedback model to refine generated answers, which we show reduces errors and improves answer quality across multiple models. Furthermore, humans find answers generated by our approach comprehensive and highly prefer them (84%) over the baseline answers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Data Analysis -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3">Answers lack comprehensiveness and provide unhelpful references</h2>
+        <img src="static/images/fine_grained_scoring.png" width="70%"/>
+        <h2 class="content has-text-justified">
+          We score human and model answers on our defined evaluation criteria to understand how experts’ answer preferences diverge across different domains.
+          We observe that human-written and model-generated answers score high on factuality and relevance, meaning most of the information provided is verifiable, trustworthy and relevant to the question.
+          However, the answers score low on completeness and references aspects, lacking important information and providing web references and examples that are not helpful (<a href="https://aclanthology.org/2023.findings-emnlp.467/" target="_blank">Liu et al., 2023a</a>), according to expert judgments.
+          Specifically, GPT-4 hallucinates and provides incorrect or fabricated web links, while human answers digress from the topic and include irrelevant information.
+        </h2>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EIR method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3">How to improve answer comprehensiveness?</h2>
+        <img src="static/images/eir.png" width="80%"/>
+        <h2 class="content has-text-justified">
+          We propose <b>Error-Informed Refinement</b> (EIR), a method that enhances the quality of both human-written and language model-generated answers by leveraging targeted, model-generated feedback.
+          Our approach consists of two key components: an error feedback model, trained on annotated completeness errors from the HaluQuestQA dataset, which evaluates an initial response and generates sentence-level feedback; and a refinement model, which takes the original prompt, the initial response, and the feedback to produce a more complete and polished answer.
+        </h2>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- EIR results -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3">EIR improves answer comprehensiveness</h2>
+        <img src="static/images/eir_results.png" width="80%"/>
+        <h2 class="content has-text-justified">
+          Our results show that inadequate feedback can deteriorate generation quality.
+          While directly prompting the refinement model (LLaMA2-13B-chat) to generate answers (ZERO-SHOT) or improve answers without detailed feedback (IMPROVE) performs better than the baseline, using more targeted feedback, such as asking the model to complete the answer (GENERIC), consistently leads to higher-quality LFQA answers.
+          In contrast, fine-grained feedback from our error detection model (EIR) outperforms coarse-grained feedback and fine-grained human feedback (on HQ2A), reducing error samples and error scores by ~3% and ~Δ38%, respectively, and improving F1 scores by ~5%, on average.
+        </h2>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Human Evaluation -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3">Experts prefer EIR refined answers</h2>
+        <img src="static/images/human_eval_eir.png" width="50%"/>
+        <h2 class="content has-text-justified">
+          To evaluate completeness, we adopt a comparative comprehensiveness metric: annotators judge which answer more fully addresses all parts of the question, based on our defined criteria for identifying completeness errors.
+          To assess the overall answer quality, annotators consider broader factors, such as the factual precision and relevance, when selecting their preferred answer.
+          We observe that refined answers are considered more comprehensive in ~60% of cases and preferred overall in ~84% of comparisons on average across all evaluated datasets, demonstrating improved completeness and quality over the baseline answers.
+        </h2>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{sachdeva2025localizingmitigatingerrorslongform,
+      title={Localizing and Mitigating Errors in Long-form Question Answering},
+      author={Rachneet Sachdeva and Yixiao Song and Mohit Iyyer and Iryna Gurevych},
+      year={2025},
+      eprint={2407.11930},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.11930},
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
